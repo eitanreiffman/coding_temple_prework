@@ -1,3 +1,5 @@
+"""
+
 # Question 1
 # Write a function to print "hello_USERNAME!"
 # USERNAME is the input of the function.
@@ -59,3 +61,23 @@ def is_leap_year(a_year):
 
 chosen_year = int(input("Choose a year: "))
 is_leap_year(chosen_year)
+
+"""
+
+# Write a function to check to see if all numbers in list are consecutive numbers.
+# For example, [2,3,4,5,6,7] are consecutive numbers,
+# but [1,2,4,5] are not consecutive numbers. The return should be boolean Type.
+
+def is_consecutive(a_list):
+    for num in a_list:
+        if a_list[0] + 1 == a_list[1]:
+            a_list.remove(a_list[0])
+        else:
+            print("This is not a consecutive list.")
+            a_list = False
+            break
+    if a_list != False:
+        print("This is a consecutive list.")
+
+my_list = [2,3,4,5,6,7]
+is_consecutive(my_list)
