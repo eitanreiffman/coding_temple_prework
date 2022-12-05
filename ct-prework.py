@@ -1,5 +1,3 @@
-"""
-
 # Question 1
 # Write a function to print "hello_USERNAME!"
 # USERNAME is the input of the function.
@@ -61,8 +59,6 @@ def is_leap_year(a_year):
 
 chosen_year = int(input("Choose a year: "))
 is_leap_year(chosen_year)
-
-"""
 
 # Question 5
 # Write a function to check to see if all numbers in list are consecutive numbers.
